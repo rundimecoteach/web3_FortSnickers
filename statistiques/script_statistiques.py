@@ -1,6 +1,10 @@
 import requests
 from bs4 import BeautifulSoup
 import os
+import time
+
+start_tournoi = 30000
+end_tournoi = start_tournoi + 101
 
 
 def save_html(content, filename):
@@ -10,7 +14,6 @@ def save_html(content, filename):
         :param content:     contenu à sauvegarder
         :param filename:    nom du fichier HTML à créer
     """
-
     # On crée le dossier html s'il n'existe pas
     if not os.path.exists("html"):
         os.makedirs("html")
@@ -19,7 +22,15 @@ def save_html(content, filename):
         html.write(content)
 
 
-# timeout de 10s pour chaque requête
-response = requests.get("http://echecs.asso.fr/Resultats.aspx?URL=Tournois/Id/30124/30124&Action=Stats", timeout=10)
-soup = BeautifulSoup(response.content, "html.parser")
-save_html(soup.prettify(), "30124")
+print("Début téléchargement des statistiques")
+for id_tournoi in range(start_tournoi, end_tournoi):
+    print("récupération du tournoi n°%s" % id_tournoi)
+    # timeout de 10s pour chaque requête
+    response = requests.get("http://echecs.asso.fr/Resultats.aspx?URL=Tournois/Id/%s/%s&Action=Stats" % (id_tournoi, id_tournoi))
+    soup = BeautifulSoup(response.content, "html.parser")
+    save_html(soup.prettify(), id_tournoi)
+
+    # on attend 3s entre chaque requête
+    time.sleep(1)
+
+print("Téléchargement des statistiques terminé")
