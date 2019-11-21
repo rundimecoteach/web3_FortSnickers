@@ -32,7 +32,6 @@ def generate_json_from_html(filename):
             # on vérifie qu'il s'agit bien d'une répartition avec du pattern matching (pas toujours le cas)
             if pattern.match(repartition_name):
                 repartitions[repartition_name] = {}
-                repartitions[repartition_name]["repartitions"] = {}
 
                 # une fois une répartition trouvée, tous les tr suivant sont soit des réponses soit des nouvelles
                 # répartition. On parcours tous les tr voisins pour récupérer leurs valeurs jusqu'à tomber
@@ -41,11 +40,12 @@ def generate_json_from_html(filename):
 
                 # on prend ensuite le tr voisin pour récupérer les réponses associées
                 next_tr = tr.find_next_sibling("tr")
-                td_array = []
+                dict_tuple = ()  # tuple de tuples
 
                 # Les réponses peuvent être dans plusieurs tr. Du coup, on itère jusqu'à
                 # passer à une autre catégorie
                 while not new_repartition:
+                    td_tuple = ()  # tuple de td
                     td_values_array = []
                     # On récupère tous les td contenus à l'intérieur du tr (forme un tuple)
                     td_values = next_tr.find_all("td", attrs={"class": "papi_liste_c"})
@@ -55,10 +55,11 @@ def generate_json_from_html(filename):
 
                         if content:
                             td_values_array.append(content)
+                            td_tuple = (*td_tuple, content)
 
                     # Si notre tableau est vide, on ne l'ajoute pas
                     if len(td_values_array) > 0:
-                        td_array.append(td_values_array)
+                        dict_tuple = (*dict_tuple, td_tuple)
 
                     # Une fois tous les td parcours, on passe au tr suivant
                     next_tr = next_tr.find_next_sibling("tr")
@@ -75,9 +76,9 @@ def generate_json_from_html(filename):
                     else:
                         new_repartition = True
 
-                repartitions[repartition_name] = td_array
+                repartitions[repartition_name] = dict((x, y) for x, y in dict_tuple)
 
-    stats_obj[filename]["repartitions"] = repartitions
+    stats_obj[filename] = repartitions
 
 
 def save_json():
@@ -85,7 +86,7 @@ def save_json():
         Sauvegarde des données dans le fichier stats.json
     """
     with open("stats.json", "w", encoding="utf-8", errors="ignore") as output:
-        json.dump(stats_obj, output, indent=4, ensure_ascii=False)
+        json.dump(stats_obj, output, indent=4, ensure_ascii=False, sort_keys=True)
 
 
 # on génère notre fichier json
