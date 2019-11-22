@@ -1,0 +1,748 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head id="ctl00_MasterHeader">
+  <meta content="application/xhtml+xml; charset=utf-8" http-equiv="content-type"/>
+  <meta name="keywords"/>
+  <meta name="description"/>
+  <title>
+   Fédération Française des Échecs
+  </title>
+  <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600" rel="stylesheet" type="text/css"/>
+  <link href="http://fonts.googleapis.com/css?family=Oswald:300,400,700" rel="stylesheet" type="text/css"/>
+  <link href="ffe.css?version=6" rel="stylesheet" type="text/css"/>
+  <link href="old.css?version=1" rel="stylesheet" type="text/css"/>
+  <link href="images/ffe16.ico" rel="shortcut icon" type="image/x-icon"/>
+  <script>
+   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-71022811-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+ </head>
+ <body>
+  <div id="menu-haut">
+   <a href="Plan.aspx">
+    Plan du site
+   </a>
+   |
+   <a href="Default.aspx?Cat=50">
+    Contact
+   </a>
+   |
+   <a href="http://zonedejeu.ffechecs.org">
+    Zone de jeu
+   </a>
+   |
+   <a href="Revues.aspx">
+    Publications
+   </a>
+   |
+   <a href="Connect.aspx">
+    Mon Compte
+   </a>
+   |
+   <a href="http://clubs.echecs.asso.fr">
+    Gérer son Club
+   </a>
+   |
+   <a href="http://admin.echecs.asso.fr">
+    Directeurs de Groupes
+   </a>
+   |
+   <a href="Print.aspx" id="ctl00_LinkPrint">
+    Imprimer
+   </a>
+  </div>
+  <div id="ctl00_divheader">
+   <div id="header-search">
+    <form action="ListeJoueurs.aspx?Action=FFE" class="form-search" method="post" name="FormJoueur">
+     <label class="label-search">
+      Rechercher un joueur
+     </label>
+     <input class="input-search" name="JoueurNom" size="12" type="text" value=""/>
+     <input class="input-search" type="submit" value="OK"/>
+    </form>
+    <form action="ListeClubs.aspx?Action=CLUB" class="form-search" method="post" name="FormClub">
+     <label class="label-search">
+      Rechercher un club
+     </label>
+     <input class="input-search" name="ClubNom" size="12" type="text" value=""/>
+     <input class="input-search" type="submit" value="OK"/>
+    </form>
+    <form action="Default.aspx" class="form-search" method="post" name="FormActu">
+     <label class="label-search">
+      Rechercher dans le site
+     </label>
+     <input class="input-search" name="ActuFiltre" size="12" type="text" value=""/>
+     <input class="input-search" type="submit" value="OK"/>
+    </form>
+    <a href="https://www.facebook.com/ffechecs?fref=ts" target="_blank">
+     <img src="images/facebook.png"/>
+    </a>
+    <a href="https://twitter.com/ffechecs" target="_blank">
+     <img src="images/twitter.png"/>
+    </a>
+   </div>
+   <div id="bandeau">
+    <img alt="ffe" src="images/bandeau-ffe.png" title="ffe"/>
+   </div>
+   <!-- end #bandeau -->
+   <ul id="nav">
+    <li class="current">
+     <a href="Default.aspx">
+      Accueil
+     </a>
+    </li>
+    <li>
+     <a href="#">
+      Découvrir
+     </a>
+     <ul>
+      <li>
+       <a href="http://www.echecs.asso.fr/Actu.aspx?Ref=11983" target="_blank">
+        Règles du Jeu
+       </a>
+      </li>
+      <li>
+       <a href="Revues.aspx">
+        Publications
+       </a>
+      </li>
+      <li>
+       <a href="http://zonedejeu.ffechecs.org" target="_blank">
+        Zone de Jeux
+       </a>
+      </li>
+      <li>
+       <a href="Default.aspx?Cat=41">
+        Histoire des échecs
+       </a>
+      </li>
+      <li>
+       <a href="https://photos.ffechecs.org/" target="_blank">
+        Albums photos
+       </a>
+      </li>
+      <li>
+       <a href="https://www.youtube.com/channel/UCn6wdVs-gSmZBJXSAWPzf7Q/videos" target="_blank">
+        Vidéos
+       </a>
+      </li>
+      <li>
+       <a href="http://echecs.asso.fr/Default.aspx?Cat=60" target="_blank">
+        Grands évènements
+       </a>
+      </li>
+     </ul>
+    </li>
+    <li>
+     <a href="#">
+      FFE
+     </a>
+     <ul>
+      <li>
+       <a href="Default.aspx?Cat=12">
+        FFE - Présentation
+       </a>
+      </li>
+      <li>
+       <a href="Ligues.aspx">
+        Ligues
+       </a>
+      </li>
+      <li>
+       <a href="Comites.aspx">
+        Comités
+       </a>
+      </li>
+      <li>
+       <a href="Clubs.aspx">
+        Clubs
+       </a>
+      </li>
+      <li>
+       <a href="Default.aspx?Cat=14">
+        Licences
+       </a>
+      </li>
+      <li>
+       <a href="Joueurs.aspx">
+        Licenciés
+       </a>
+      </li>
+      <li>
+       <a href="Default.aspx?Cat=55">
+        Les effectifs de la F.F.E.
+       </a>
+      </li>
+      <li>
+       <a href="Default.aspx?Cat=13">
+        Siège fédéral
+       </a>
+      </li>
+      <li>
+       <a href="Default.aspx?Cat=35">
+        Commissions-Directions
+       </a>
+      </li>
+      <li>
+       <a href="Default.aspx?Cat=42">
+        Infos fédérales
+       </a>
+      </li>
+      <li>
+       <a href="Default.aspx?Cat=49">
+        Appel à projets
+       </a>
+      </li>
+      <li>
+       <a href="Default.aspx?Cat=54">
+        Centenaire de la FFE
+       </a>
+      </li>
+      <li>
+       <a href="Default.aspx?Cat=50">
+        Contacts
+       </a>
+      </li>
+     </ul>
+    </li>
+    <li>
+     <a href="#">
+      Compétitions
+     </a>
+     <ul>
+      <li>
+       <a href="Calendrier.aspx">
+        Calendrier
+       </a>
+      </li>
+      <li>
+       <a href="Equipes.aspx">
+        Par équipes
+       </a>
+      </li>
+      <li>
+       <a href="Tournois.aspx">
+        Tournois homologués
+       </a>
+      </li>
+      <li>
+       <a href="Default.aspx?Cat=21">
+        Vos opens
+       </a>
+      </li>
+      <li>
+       <a href="Default.aspx?Cat=16">
+        Ch. France Jeunes
+       </a>
+      </li>
+      <li>
+       <a href="Default.aspx?Cat=15">
+        Ch. France
+       </a>
+      </li>
+      <li>
+       <a href="Default.aspx?Cat=28">
+        Challenge BLitz FFE
+       </a>
+      </li>
+      <li>
+       <a href="Default.aspx?Cat=58">
+        Elo Rapide FFE
+       </a>
+      </li>
+      <li>
+       <a href="http://ffechecs.org" target="_blank">
+        Portail des événements
+       </a>
+      </li>
+     </ul>
+    </li>
+    <li>
+     <a href="#">
+      Secteurs
+     </a>
+     <ul>
+      <li>
+       <a href="Default.aspx?Cat=8">
+        Haut niveau et titrés
+       </a>
+      </li>
+      <li>
+       <a href="Default.aspx?Cat=7">
+        Secteur féminin
+       </a>
+      </li>
+      <li>
+       <a href="http://jeunes.ffechecs.fr" target="_blank">
+        Jeunes
+       </a>
+      </li>
+      <li>
+       <a href="http://scolaires.ffechecs.fr" target="_blank">
+        Scolaires
+       </a>
+      </li>
+      <li>
+       <a href="http://handi.ffechecs.fr" target="_blank">
+        Handicap
+       </a>
+      </li>
+      <li>
+       <a href="https://dna.ffechecs.fr/" target="_blank">
+        Arbitrage
+       </a>
+      </li>
+      <li>
+       <a href="http://entraineurs.ffechecs.fr" target="_blank">
+        Entraînement
+       </a>
+      </li>
+      <li>
+       <a href="Default.aspx?Cat=9">
+        Discipline
+       </a>
+      </li>
+      <li>
+       <a href="https://ctf.ffechecs.fr/" target="_blank">
+        Commission technique
+       </a>
+      </li>
+      <li>
+       <a href="Default.aspx?Cat=19">
+        Téléthon
+       </a>
+      </li>
+      <li>
+       <a href="Default.aspx?Cat=23">
+        Vos Stages
+       </a>
+      </li>
+     </ul>
+    </li>
+    <li>
+     <a href="#">
+      Documents
+     </a>
+     <ul>
+      <li>
+       <a href="Default.aspx?Cat=17">
+        Règlements
+       </a>
+      </li>
+      <li>
+       <a href="Default.aspx?Cat=20">
+        Comptes rendus
+       </a>
+      </li>
+      <li>
+       <a href="Default.aspx?Cat=26">
+        Documents Clubs
+       </a>
+      </li>
+      <li>
+       <a href="Default.aspx?Cat=46">
+        Ressources pédagogiques
+       </a>
+      </li>
+     </ul>
+    </li>
+    <li>
+     <a href="#">
+      Développement
+     </a>
+     <ul>
+      <li>
+       <a href="Default.aspx?Cat=6">
+        Formation
+       </a>
+      </li>
+      <li>
+       <a href="Default.aspx?Cat=39">
+        Nouveaux Publics
+       </a>
+      </li>
+      <li>
+       <a href="Default.aspx?Cat=40">
+        Semaines Thématiques
+       </a>
+      </li>
+      <li>
+       <a href="Default.aspx?Cat=2">
+        Annonces Emploi
+       </a>
+      </li>
+      <li>
+       <a href="Default.aspx?Cat=24">
+        Annonces Clubs
+       </a>
+      </li>
+      <li>
+       <a href="http://www.echecs.asso.fr/Default.aspx?Cat=57" target="_blank">
+        Protection judiciaire de la Jeunesse
+       </a>
+      </li>
+      <li>
+       <a href="Default.aspx?Cat=49">
+        Appel à projets
+       </a>
+      </li>
+      <li>
+       <a href="Default.aspx?Cat=59">
+        Semaine au féminin
+       </a>
+      </li>
+     </ul>
+    </li>
+    <li>
+     <a href="Default.aspx?Cat=36">
+      Partenaires
+     </a>
+     <ul>
+      <li>
+       <a href="http://www.europe-echecs.com" target="_blank">
+        Europe Echecs
+       </a>
+      </li>
+      <li>
+       <a href="http://www.profession-sport-loisirs.fr" target="_blank">
+        Profession Sports &amp; Loisirs
+       </a>
+      </li>
+      <li>
+       <a href="http://www.echiquierdelareussite.org" target="_blank">
+        L'échiquier de la réussite
+       </a>
+      </li>
+      <li>
+       <a href="http://www.olibris.fr" target="_blank">
+        Olibris
+       </a>
+      </li>
+      <li>
+       <a href="http://www.ccas.fr" target="_blank">
+        C.C.A.S.
+       </a>
+      </li>
+      <li>
+       <a href="http://www.ucpa-vacances.com" target="_blank">
+        U.C.P.A.
+       </a>
+      </li>
+      <li>
+       <a href="http://www.univ-lyon1.fr" target="_blank">
+        U.C.B. Lyon I
+       </a>
+      </li>
+      <li>
+       <a href="http://www.chateauvillandry.fr" target="_blank">
+        Le Château de Villandry
+       </a>
+      </li>
+      <li>
+       <a href="https://www.apf.asso.fr/" target="_blank">
+        A.P.F.
+       </a>
+      </li>
+      <li>
+       <a href="http://echecs.asso.fr/actu.aspx?ref=10962" target="_blank">
+        Nature et Découvertes
+       </a>
+      </li>
+      <li>
+       <a href="http://www.echecs.asso.fr/Actu.aspx?Ref=10975" target="_blank">
+        D.P.J.J.
+       </a>
+      </li>
+      <li>
+       <a href="https://unss.org/" target="_blank">
+        U.N.S.S.
+       </a>
+      </li>
+      <li>
+       <a href="https://usep.org/" target="_blank">
+        U.S.E.P.
+       </a>
+      </li>
+      <li>
+       <a href="http://www.aefe.fr/" target="_blank">
+        A.E.F.E.
+       </a>
+      </li>
+      <li>
+       <a href="http://www.ffse.fr/" target="_blank">
+        F.F.S.E.
+       </a>
+      </li>
+      <li>
+       <a href="https://www.sportetcitoyennete.com/" target="_blank">
+        Sport et Citoyenneté
+       </a>
+      </li>
+      <li>
+       <a href="http://www.femixsports.fr/" target="_blank">
+        Femix'Sports
+       </a>
+      </li>
+     </ul>
+    </li>
+    <li>
+     <a href="Actu.aspx?Ref=10771">
+      Boutique
+     </a>
+    </li>
+   </ul>
+   <!-- end #menu -->
+   <div class="pub" id="ctl00_divpub">
+    <a href="http://echecs.asso.fr/Actu.aspx?Ref=12132" id="ctl00_LinkBandeau">
+     <img border="0" src="images/Bandeau/masterclass_novembre_2019.jpg"/>
+    </a>
+   </div>
+   <!-- end #pub -->
+  </div>
+  <!-- end #header -->
+  <div id="page">
+   <div id="page-bgtop">
+    <div id="page-bgbtm">
+     <table cellpadding="2" cellspacing="6" class="page" id="TablePage">
+      <tr>
+       <td>
+        <div align="center">
+         <div align="center">
+          <table cellpadding="2" cellspacing="0" style="border-collapse:collapse;" width="800">
+           <tr class="papi_titre">
+            <td align="center" colspan="8">
+             Cappelle-la-Grande - Tournoi jeunes
+             <br/>
+             Liste des participants
+            </td>
+           </tr>
+           <tr class="papi_liste_t">
+            <td class="papi_r">
+             Nr
+            </td>
+            <td class="papi_r">
+            </td>
+            <td class="papi_l">
+             Nom
+            </td>
+            <td class="papi_c">
+             Rapide
+            </td>
+            <td class="papi_c">
+             Cat.
+            </td>
+            <td class="papi_c">
+             Fede
+            </td>
+            <td class="papi_c">
+             Ligue
+            </td>
+            <td class="papi_l">
+             Club
+            </td>
+           </tr>
+           <tr class="papi_liste_f">
+            <td class="papi_r">
+             1
+            </td>
+            <td class="papi_r">
+            </td>
+            <td class="papi_l">
+             BOUCKENOOGHE Clement
+            </td>
+            <td class="papi_r">
+             1150 R
+            </td>
+            <td class="papi_c">
+             PouM
+            </td>
+            <td class="papi_c">
+             <img border="0" height="15px" src="flags/FRA.GIF"/>
+            </td>
+            <td class="papi_c">
+             NPC
+            </td>
+            <td class="papi_l">
+             L'Echiquier Cappellois
+            </td>
+           </tr>
+           <tr class="papi_liste_c">
+            <td class="papi_r">
+             2
+            </td>
+            <td class="papi_r">
+            </td>
+            <td class="papi_l">
+             BYACHE Nathan
+            </td>
+            <td class="papi_r">
+             1120 R
+            </td>
+            <td class="papi_c">
+             PouM
+            </td>
+            <td class="papi_c">
+             <img border="0" height="15px" src="flags/FRA.GIF"/>
+            </td>
+            <td class="papi_c">
+             NPC
+            </td>
+            <td class="papi_l">
+             L'Echiquier Cappellois
+            </td>
+           </tr>
+           <tr class="papi_liste_f">
+            <td class="papi_r">
+             3
+            </td>
+            <td class="papi_r">
+            </td>
+            <td class="papi_l">
+             FARTHOUAT Titoine
+            </td>
+            <td class="papi_r">
+             1370 R
+            </td>
+            <td class="papi_c">
+             PupM
+            </td>
+            <td class="papi_c">
+             <img border="0" height="15px" src="flags/FRA.GIF"/>
+            </td>
+            <td class="papi_c">
+             NPC
+            </td>
+            <td class="papi_l">
+             L'Echiquier Cappellois
+            </td>
+           </tr>
+           <tr class="papi_liste_c">
+            <td class="papi_r">
+             4
+            </td>
+            <td class="papi_r">
+            </td>
+            <td class="papi_l">
+             NATIEZ Anthony
+            </td>
+            <td class="papi_r">
+             1290 R
+            </td>
+            <td class="papi_c">
+             PupM
+            </td>
+            <td class="papi_c">
+             <img border="0" height="15px" src="flags/FRA.GIF"/>
+            </td>
+            <td class="papi_c">
+             NPC
+            </td>
+            <td class="papi_l">
+             L'Echiquier Cappellois
+            </td>
+           </tr>
+           <tr class="papi_liste_f">
+            <td class="papi_r">
+             5
+            </td>
+            <td class="papi_r">
+            </td>
+            <td class="papi_l">
+             RANSON Flavie
+            </td>
+            <td class="papi_r">
+             999 E
+            </td>
+            <td class="papi_c">
+             BenF
+            </td>
+            <td class="papi_c">
+             <img border="0" height="15px" src="flags/FRA.GIF"/>
+            </td>
+            <td class="papi_c">
+             NPC
+            </td>
+            <td class="papi_l">
+             L'Echiquier Cappellois
+            </td>
+           </tr>
+           <tr class="papi_liste_c">
+            <td class="papi_r">
+             6
+            </td>
+            <td class="papi_r">
+            </td>
+            <td class="papi_l">
+             TURBOT Jeremy
+            </td>
+            <td class="papi_r">
+             1430 R
+            </td>
+            <td class="papi_c">
+             PupM
+            </td>
+            <td class="papi_c">
+             <img border="0" height="15px" src="flags/FRA.GIF"/>
+            </td>
+            <td class="papi_c">
+             NPC
+            </td>
+            <td class="papi_l">
+             L'Echiquier Cappellois
+            </td>
+           </tr>
+          </table>
+         </div>
+        </div>
+        <div align="center">
+         <p>
+         </p>
+        </div>
+       </td>
+      </tr>
+     </table>
+    </div>
+   </div>
+  </div>
+  <!-- end #page -->
+  <div id="ctl00_divfooter">
+   <div id="footer">
+    <p>
+     <strong>
+      Copyright  © 2015 FFE |
+      <a href="http://www.echecs.asso.fr/Ag/Mentions_legales_FFE.pdf">
+       Mentions légales
+      </a>
+      |
+      <a href="http://www.echecs.asso.fr/Ag/RGPD.pdf">
+       Protection des données
+      </a>
+     </strong>
+     <br/>
+     Fédération Française des Echecs |
+     <span id="ctl00_LabelAdresse">
+      6 rue de l'Eglise | 92600 ASNIERES SUR SEINE
+     </span>
+     <br/>
+     tél :
+     <span id="ctl00_LabelTel">
+      01 39 44 65 80
+     </span>
+     | fax : 01 30 69 93 15 | webmestre :
+     <a href="mailto:erick.mouret@echecs.asso.fr">
+      erick.mouret@echecs.asso.fr
+     </a>
+    </p>
+    <br/>
+    <p id="logo-ffe">
+     <img src="images/logo-ffe.png"/>
+    </p>
+   </div>
+  </div>
+ </body>
+</html>
