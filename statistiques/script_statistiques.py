@@ -25,7 +25,6 @@ def save_html(content, filename):
 print("Début téléchargement des statistiques")
 for id_tournoi in range(start_tournoi, end_tournoi):
     print("récupération du tournoi n°%s" % id_tournoi)
-    # timeout de 10s pour chaque requête
     response = requests.get("http://echecs.asso.fr/Resultats.aspx?URL=Tournois/Id/%s/%s&Action=Stats" % (id_tournoi, id_tournoi))
     soup = BeautifulSoup(response.content, "html.parser")
     save_html(soup.prettify(), id_tournoi)

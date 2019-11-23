@@ -4,7 +4,7 @@ import os
 import time
 
 start_tournoi = 30000
-end_tournoi = start_tournoi + 51
+end_tournoi = start_tournoi + 150
 
 
 def save_html(content, filename):
@@ -30,6 +30,6 @@ for id_tournoi in range(start_tournoi, end_tournoi):
     save_html(soup.prettify(), id_tournoi)
 
     # on attend 2s entre chaque requête
-    time.sleep(2)
+    time.sleep(1)
 
 print("Téléchargement des résultats terminé")
