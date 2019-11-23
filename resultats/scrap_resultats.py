@@ -53,6 +53,7 @@ def generate_json_from_html(filename):
 
             # Pour chaque lignes, on va récupérer les valeurs associées à chaque catégorie récupérée
             for tr in tr_rank_list:
+                newCat = {}
                 # les valeurs sont contenues dans les balises td ayant la classe "papi_r"
                 td_list = tr.find_all("td")
 
@@ -61,12 +62,17 @@ def generate_json_from_html(filename):
 
                     if iteration == 1:
                         iteration += 1
-                    categories[key] = td_list[iteration].text.strip()
-                    # print("%s : %s" % (key, value))
+                    if key == "Fede":
+                        filename = td_list[iteration].img.attrs["src"]
+                        ext = filename.split("/")[1].split(".")[0]
+                        newCat[key] = ext
+                    else : 
+                        newCat[key] = td_list[iteration].text.strip()
+                        # print("%s : %s" % (key, value))
                     iteration += 1
 
-                print("%s \n" % categories)
-                results.append(categories)
+                print("%s \n" % newCat)
+                results.append(newCat)
 
             if len(results) > 0:
                 resultats_obj[filename] = results
