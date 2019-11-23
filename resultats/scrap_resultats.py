@@ -36,10 +36,9 @@ def generate_json_from_html(filename):
             # on récupère les différentes catégories du tableau
             tr_categories = table_content.find_all("tr", attrs={"class": "papi_small_t"})
             categories = {}
-            results = []
+            results = []  # contient l'ensemble des résultats du tableau
 
             for tr_categorie in tr_categories:
-                # on récupère tous les td
                 td_categories = tr_categorie.find_all("td")
 
                 for td_categorie in td_categories:
@@ -63,15 +62,13 @@ def generate_json_from_html(filename):
                     if iteration == 1:
                         iteration += 1
                     if key == "Fede":
-                        filename = td_list[iteration].img.attrs["src"]
-                        ext = filename.split("/")[1].split(".")[0]
+                        name_file = td_list[iteration].img.attrs["src"]
+                        ext = name_file.split("/")[1].split(".")[0]
                         newCat[key] = ext
-                    else : 
+                    else:
                         newCat[key] = td_list[iteration].text.strip()
-                        # print("%s : %s" % (key, value))
                     iteration += 1
 
-                print("%s \n" % newCat)
                 results.append(newCat)
 
             if len(results) > 0:
@@ -86,10 +83,10 @@ def save_json():
         json.dump(resultats_obj, output, indent=4, ensure_ascii=False)
 
 
-# files = [f for f in listdir("html") if isfile(join("html", f))]
-#
-# for file in files:
-#     filename = file.replace(".html", "")
+files = [f for f in listdir("html") if isfile(join("html", f))]
+
+for file in files:
+    filename = file.replace(".html", "")
     # on génère notre fichier json
-generate_json_from_html("30005")
-save_json()
+    generate_json_from_html(filename)
+    save_json()

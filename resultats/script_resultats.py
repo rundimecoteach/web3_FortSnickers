@@ -4,7 +4,7 @@ import os
 import time
 
 start_tournoi = 30000
-end_tournoi = start_tournoi + 10
+end_tournoi = start_tournoi + 51
 
 
 def save_html(content, filename):
