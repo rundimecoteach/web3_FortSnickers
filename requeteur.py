@@ -53,6 +53,29 @@ def get_rank_victory_player():
         return rank
 
 
+def get_rank_clubs():
+    with open("./statistiques/stats.json", "r", encoding="utf-8") as json_file:
+        tournaments = json.load(json_file)
+
+        rank = {}
+
+        # Pour chaque tournoi, on parcours la répartition des clubs
+        for number_tournament in tournaments.keys():
+            tournament = tournaments[number_tournament]
+
+            if len(tournament) > 0:
+                repart_club = tournament.get("Répartition par clubs")
+
+                if repart_club is not None:
+                    for club in repart_club.keys():
+                        if rank.get(club) is None:
+                            rank[club] = 1
+                        else:
+                            rank[club] += 1
+
+        return rank
+
+
 def define_action(choice):
     # Stats d'un joueur
     if choice == 1:
@@ -63,6 +86,12 @@ def define_action(choice):
     # Classement des joueurs par victoire
     elif choice == 2:
         r = get_rank_victory_player()
+
+        for key, value in sorted(r.items(), key=itemgetter(1), reverse=True):
+            print(value, key)
+    # Club les plus atifs
+    elif choice == 4:
+        r = get_rank_clubs()
 
         for key, value in sorted(r.items(), key=itemgetter(1), reverse=True):
             print(value, key)
