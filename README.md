@@ -1,5 +1,12 @@
 # WebScrapping - Tournois d'échec
 
+## Pré-requis
+* BeautifulSoup => apt-get install python3-bs4
+* Requests => pip install requests
+* JustText => pip install jusText
+* TermColor => pip install termcolor
+* ProgressBar => pip install progressbar2
+
 ## Récupération d'un jeu de données et génération des fichiers JSON
 Pour utiliser le requêteur (fichier `requeteur.py`), il faut exécuter les scripts de chaque répertoire
 au préalable pour générer les fichiers json utilisés pour les statistiques.
