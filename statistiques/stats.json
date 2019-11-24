@@ -1,0 +1,772 @@
+{
+    "30000": {
+        "Répartition par catégorie d'âge": {
+            "Pupille": "8"
+        },
+        "Répartition par clubs": {
+            "Cercle Echiquier Pertuisien": "1",
+            "Diagonale du Fou Echecs - Laragne": "1",
+            "Echiquier Centre Vaucluse": "1",
+            "Echiquier Haut Alpin de Gap": "2",
+            "L'Echiquier du Roy René": "1",
+            "Marseille Passion Echecs": "2"
+        },
+        "Répartition par fédération": {
+            "France": "8"
+        },
+        "Répartition par ligues": {
+            "Provence": "8"
+        },
+        "Répartition par sexes": {
+            "Féminin": "8"
+        },
+        "Répartition par tranche National": {
+            "Classement entre 1000 et 1200": "2",
+            "Classement entre 1200 et 1400": "3",
+            "Non Classés": "3"
+        },
+        "Répartition par type de National": {
+            "Estimé": "3",
+            "Fide": "2",
+            "National": "3"
+        }
+    },
+    "30001": {
+        "Répartition par catégorie d'âge": {
+            "Benjamin": "6"
+        },
+        "Répartition par clubs": {
+            "Echecs Loisirs Orangeois": "2",
+            "Echiquier des Papes": "1",
+            "L'Echiquier du Roy René": "1",
+            "Marseille Passion Echecs": "2"
+        },
+        "Répartition par fédération": {
+            "France": "6"
+        },
+        "Répartition par ligues": {
+            "Provence": "6"
+        },
+        "Répartition par sexes": {
+            "Féminin": "6"
+        },
+        "Répartition par tranche National": {
+            "Classement entre 1000 et 1200": "2",
+            "Classement entre 1200 et 1400": "1",
+            "Classement entre 1400 et 1600": "1",
+            "Non Classés": "2"
+        },
+        "Répartition par type de National": {
+            "Estimé": "2",
+            "Fide": "3",
+            "National": "1"
+        }
+    },
+    "30002": {
+        "Répartition par catégorie d'âge": {
+            "Minime": "4"
+        },
+        "Répartition par clubs": {
+            "CE Vitrolles": "1",
+            "Echiquier Centre Vaucluse": "1",
+            "Echiquier Orangeois": "1",
+            "Echiquier des Papes": "1"
+        },
+        "Répartition par fédération": {
+            "France": "4"
+        },
+        "Répartition par ligues": {
+            "Provence": "4"
+        },
+        "Répartition par sexes": {
+            "Féminin": "4"
+        },
+        "Répartition par tranche National": {
+            "Classement entre 1200 et 1400": "1",
+            "Classement entre 1400 et 1600": "2",
+            "Classement entre 1600 et 1800": "1"
+        },
+        "Répartition par type de National": {
+            "Fide": "4"
+        }
+    },
+    "30003": {
+        "Répartition par catégorie d'âge": {
+            "Minime": "15"
+        },
+        "Répartition par clubs": {
+            "CE Vitrolles": "1",
+            "Cassis Echecs": "2",
+            "Cercle Echiquier Pertuisien": "1",
+            "Cercle d'Echecs Embrunais-Guillestrois": "1",
+            "Diagonale du Fou Echecs - Laragne": "1",
+            "Echecs Loisirs Orangeois": "1",
+            "Echiquier Centre Vaucluse": "1",
+            "Echiquier Haut Alpin de Gap": "1",
+            "Echiquier Montelais": "1",
+            "Echiquier Orangeois": "1",
+            "Echiquier du Pays Dignois": "1",
+            "L'Echiquier du Roy René": "1",
+            "Marseille Echecs": "2"
+        },
+        "Répartition par fédération": {
+            "France": "15"
+        },
+        "Répartition par ligues": {
+            "Provence": "15"
+        },
+        "Répartition par sexes": {
+            "Masculin": "15"
+        },
+        "Répartition par tranche elo": {
+            "Classement entre 1000 et 1200": "1",
+            "Classement entre 1200 et 1400": "3",
+            "Classement entre 1400 et 1600": "4",
+            "Classement entre 1600 et 1800": "5",
+            "Classement entre 1800 et 2000": "1",
+            "Non Classés": "1"
+        },
+        "Répartition par type de elo": {
+            "Estimé": "1",
+            "Fide": "11",
+            "National": "3"
+        }
+    },
+    "30004": {
+        "Répartition par catégorie d'âge": {
+            "Benjamin": "16"
+        },
+        "Répartition par clubs": {
+            "Cercle d'Echecs Aubagnais": "1",
+            "Echiquier Centre Vaucluse": "2",
+            "Echiquier Haut Alpin de Gap": "3",
+            "Echiquier Montelais": "2",
+            "Echiquier Orangeois": "1",
+            "Echiquier des Papes": "2",
+            "L'Echiquier du Roy René": "1",
+            "Marseille Echecs": "2",
+            "Marseille Passion Echecs": "2"
+        },
+        "Répartition par fédération": {
+            "France": "16"
+        },
+        "Répartition par ligues": {
+            "Provence": "16"
+        },
+        "Répartition par sexes": {
+            "Masculin": "16"
+        },
+        "Répartition par tranche elo": {
+            "Classement entre 1000 et 1200": "2",
+            "Classement entre 1200 et 1400": "6",
+            "Classement entre 1400 et 1600": "3",
+            "Classement entre 1600 et 1800": "2",
+            "Classement entre 1800 et 2000": "2",
+            "Non Classés": "1"
+        },
+        "Répartition par type de elo": {
+            "Estimé": "1",
+            "Fide": "9",
+            "National": "6"
+        }
+    },
+    "30005": {
+        "Répartition par catégorie d'âge": {
+            "Pupille": "16"
+        },
+        "Répartition par clubs": {
+            "CE Vitrolles": "1",
+            "Echecs Loisirs Orangeois": "3",
+            "Echiquier Centre Vaucluse": "1",
+            "Echiquier Haut Alpin de Gap": "2",
+            "Echiquier Orangeois": "2",
+            "Echiquier des Papes": "1",
+            "Echiquier du Pays Dignois": "1",
+            "L'Echiquier du Roy René": "1",
+            "Marseille Echecs": "4"
+        },
+        "Répartition par fédération": {
+            "France": "16"
+        },
+        "Répartition par ligues": {
+            "Provence": "16"
+        },
+        "Répartition par sexes": {
+            "Masculin": "16"
+        },
+        "Répartition par tranche elo": {
+            "Classement entre 1200 et 1400": "10",
+            "Classement entre 1400 et 1600": "4",
+            "Non Classés": "2"
+        },
+        "Répartition par type de elo": {
+            "Estimé": "2",
+            "Fide": "7",
+            "National": "7"
+        }
+    },
+    "30006": {
+        "Répartition par catégorie d'âge": {
+            "Benjamin": "2",
+            "Cadet": "4"
+        },
+        "Répartition par clubs": {
+            "CE Vitrolles": "1",
+            "Echiquier Centre Vaucluse": "1",
+            "Echiquier Montelais": "1",
+            "Marseille Echecs": "2",
+            "Salon Nostradamus": "1"
+        },
+        "Répartition par fédération": {
+            "France": "6"
+        },
+        "Répartition par ligues": {
+            "Provence": "6"
+        },
+        "Répartition par sexes": {
+            "Masculin": "6"
+        },
+        "Répartition par tranche National": {
+            "Classement entre 1000 et 1200": "1",
+            "Classement entre 1400 et 1600": "2",
+            "Classement entre 1600 et 1800": "1",
+            "Classement entre 1800 et 2000": "2"
+        },
+        "Répartition par type de National": {
+            "Fide": "5",
+            "National": "1"
+        }
+    },
+    "30007": {
+        "Répartition par catégorie d'âge": {
+            "Pupille": "20"
+        },
+        "Répartition par clubs": {
+            "ALCHESS Châteaudun": "1",
+            "Chevau-légers de la Choisille": "1",
+            "Club d'Echecs d'Avoine": "5",
+            "Club d'Echecs de Bourges": "2",
+            "Dreux Philidor": "1",
+            "Echiquier Tourangeau": "4",
+            "Echiquier du Gâtinais": "2",
+            "Les Ambassadeurs du Roi - Chenonceaux": "1",
+            "Les Fous de Luynes": "2",
+            "U.S. Orléans.Echecs": "1"
+        },
+        "Répartition par fédération": {
+            "France": "20"
+        },
+        "Répartition par ligues": {
+            "Centre Val-de-Loire": "20"
+        },
+        "Répartition par sexes": {
+            "Masculin": "20"
+        },
+        "Répartition par tranche elo": {
+            "Classement entre 1000 et 1200": "7",
+            "Classement entre 1200 et 1400": "4",
+            "Classement entre 1400 et 1600": "4",
+            "Non Classés": "5"
+        },
+        "Répartition par type de elo": {
+            "Estimé": "5",
+            "Fide": "5",
+            "National": "10"
+        }
+    },
+    "30008": {
+        "Répartition par catégorie d'âge": {
+            "Pupille": "10"
+        },
+        "Répartition par clubs": {
+            "Chevau-légers de la Choisille": "4",
+            "Club d'Echecs d'Avoine": "1",
+            "Club d'Echecs de Bourges": "1",
+            "Echiquier du Gâtinais": "2",
+            "Echiquiers Berry-Sologne": "1",
+            "Saint-Etienne Echecs": "1"
+        },
+        "Répartition par fédération": {
+            "France": "10"
+        },
+        "Répartition par ligues": {
+            "Centre Val-de-Loire": "10"
+        },
+        "Répartition par sexes": {
+            "Féminin": "10"
+        },
+        "Répartition par tranche elo": {
+            "Classement entre 1000 et 1200": "6",
+            "Classement entre 1200 et 1400": "3",
+            "Non Classés": "1"
+        },
+        "Répartition par type de elo": {
+            "Estimé": "1",
+            "Fide": "2",
+            "National": "7"
+        }
+    },
+    "30009": {
+        "Répartition par catégorie d'âge": {
+            "Benjamin": "23"
+        },
+        "Répartition par clubs": {
+            "A.A.J. Blois": "1",
+            "Chevau-légers de la Choisille": "3",
+            "Club d'Echecs d'Avoine": "1",
+            "Club d'Echecs de Bourges": "3",
+            "Echiquier Tourangeau": "5",
+            "Echiquier du Gâtinais": "1",
+            "Echiquiers Berry-Sologne": "1",
+            "Nogent le Roi": "1",
+            "Saint-Etienne Echecs": "3",
+            "U.S. Orléans.Echecs": "3",
+            "US St Cyr en Val": "1"
+        },
+        "Répartition par fédération": {
+            "France": "22",
+            "Roumanie": "1"
+        },
+        "Répartition par ligues": {
+            "Centre Val-de-Loire": "23"
+        },
+        "Répartition par sexes": {
+            "Masculin": "23"
+        },
+        "Répartition par tranche elo": {
+            "Classement entre 1000 et 1200": "1",
+            "Classement entre 1200 et 1400": "9",
+            "Classement entre 1400 et 1600": "5",
+            "Classement entre 1600 et 1800": "4",
+            "Non Classés": "4"
+        },
+        "Répartition par type de elo": {
+            "Estimé": "4",
+            "Fide": "9",
+            "National": "10"
+        }
+    },
+    "30010": {
+        "Répartition par catégorie d'âge": {
+            "Benjamin": "5",
+            "Minime": "3"
+        },
+        "Répartition par clubs": {
+            "Chevau-légers de la Choisille": "1",
+            "Club d'Echecs d'Avoine": "2",
+            "Echiquier du Gâtinais": "2",
+            "Echiquiers Berry-Sologne": "1",
+            "MJC Chécy": "1",
+            "U.S. Orléans.Echecs": "1"
+        },
+        "Répartition par fédération": {
+            "France": "8"
+        },
+        "Répartition par ligues": {
+            "Centre Val-de-Loire": "8"
+        },
+        "Répartition par sexes": {
+            "Féminin": "8"
+        },
+        "Répartition par tranche National": {
+            "Classement entre 1000 et 1200": "1",
+            "Classement entre 1200 et 1400": "3",
+            "Classement entre 1400 et 1600": "4"
+        },
+        "Répartition par type de National": {
+            "Fide": "4",
+            "National": "4"
+        }
+    },
+    "30011": {
+        "Répartition par catégorie d'âge": {
+            "Minime": "11"
+        },
+        "Répartition par clubs": {
+            "ALCHESS Châteaudun": "1",
+            "Chevau-légers de la Choisille": "1",
+            "Club d'Echecs d'Avoine": "2",
+            "Club d'Echecs de Châteauroux": "1",
+            "De Plaimpied dans les Echecs": "1",
+            "Echiquier Tourangeau": "1",
+            "Echiquier du Gâtinais": "2",
+            "Les Fous de Luynes": "1",
+            "Nogent le Roi": "1"
+        },
+        "Répartition par fédération": {
+            "France": "11"
+        },
+        "Répartition par ligues": {
+            "Centre Val-de-Loire": "11"
+        },
+        "Répartition par sexes": {
+            "Masculin": "11"
+        },
+        "Répartition par tranche elo": {
+            "Classement entre 1000 et 1200": "1",
+            "Classement entre 1200 et 1400": "1",
+            "Classement entre 1400 et 1600": "4",
+            "Classement entre 1600 et 1800": "3",
+            "Classement entre 1800 et 2000": "1",
+            "Non Classés": "1"
+        },
+        "Répartition par type de elo": {
+            "Estimé": "1",
+            "Fide": "9",
+            "National": "1"
+        }
+    },
+    "30012": {
+        "Répartition par catégorie d'âge": {
+            "Minime": "3"
+        },
+        "Répartition par clubs": {
+            "Club d'Echecs d'Avoine": "1",
+            "Echiquier du Gâtinais": "1",
+            "MJC Chécy": "1"
+        },
+        "Répartition par fédération": {
+            "France": "3"
+        },
+        "Répartition par ligues": {
+            "Centre Val-de-Loire": "3"
+        },
+        "Répartition par sexes": {
+            "Féminin": "3"
+        },
+        "Répartition par tranche elo": {
+            "Classement entre 1200 et 1400": "1",
+            "Classement entre 1400 et 1600": "2"
+        },
+        "Répartition par type de elo": {
+            "Fide": "2",
+            "National": "1"
+        }
+    },
+    "30013": {
+        "Répartition par catégorie d'âge": {
+            "Benjamin": "4",
+            "Petit-Poussin": "6",
+            "Poussin": "3",
+            "Pupille": "3",
+            "Senior": "3"
+        },
+        "Répartition par clubs": {
+            "L'Echiquier Chalonnais": "5",
+            "Les Tours de Haute Picardie": "1",
+            "Mulhouse Philidor": "1",
+            "Reims Echec et Mat": "12"
+        },
+        "Répartition par fédération": {
+            "France": "19"
+        },
+        "Répartition par ligues": {
+            "Alsace": "1",
+            "Champagne-Ardennes": "17",
+            "Picardie": "1"
+        },
+        "Répartition par sexes": {
+            "Féminin": "2",
+            "Masculin": "17"
+        },
+        "Répartition par tranche elo": {
+            "Classement entre 1000 et 1200": "3",
+            "Classement entre 1200 et 1400": "4",
+            "Non Classés": "12"
+        },
+        "Répartition par type de elo": {
+            "Estimé": "12",
+            "National": "7"
+        }
+    },
+    "30014": {
+        "Répartition par catégorie d'âge": {
+            "Benjamin": "3",
+            "Minime": "2",
+            "Pupille": "3",
+            "Senior": "30",
+            "Vétéran": "4"
+        },
+        "Répartition par clubs": {
+            "A.J.E. Noyon": "1",
+            "Cavaliers de la Montagne Couronnée": "1",
+            "Club d'Echecs Lexovien": "1",
+            "Echiquier Nord Haut-Marnais": "3",
+            "Epernay64": "2",
+            "L'Echiquier Aubois": "1",
+            "L'Echiquier Chalonnais": "6",
+            "Le Palamède": "4",
+            "Les Tours Givetoises": "1",
+            "Metz Alekhine": "2",
+            "Mulhouse Philidor": "1",
+            "Reims Echec et Mat": "19"
+        },
+        "Répartition par fédération": {
+            "Armenie": "1",
+            "France": "41"
+        },
+        "Répartition par ligues": {
+            "Alsace": "1",
+            "Basse-Normandie": "1",
+            "Champagne-Ardennes": "36",
+            "Lorraine": "2",
+            "Picardie": "2"
+        },
+        "Répartition par sexes": {
+            "Féminin": "2",
+            "Masculin": "40"
+        },
+        "Répartition par titres": {
+            "Maître Fide": "1",
+            "Maître International": "1",
+            "Maître International Féminin": "1"
+        },
+        "Répartition par tranche elo": {
+            "Classement entre 1200 et 1400": "1",
+            "Classement entre 1400 et 1600": "15",
+            "Classement entre 1600 et 1800": "13",
+            "Classement entre 1800 et 2000": "5",
+            "Classement entre 2000 et 2200": "5",
+            "Classement entre 2200 et 2400": "1",
+            "Classement entre 2400 et 2600": "1",
+            "Non Classés": "1"
+        },
+        "Répartition par type de elo": {
+            "Estimé": "1",
+            "Fide": "31",
+            "National": "10"
+        }
+    },
+    "30015": {
+        "Répartition par catégorie d'âge": {
+            "Cadet": "3",
+            "Minime": "1",
+            "Pupille": "1",
+            "Senior": "11",
+            "Vétéran": "2"
+        },
+        "Répartition par clubs": {
+            "Roi Blanc Montbeliard": "18"
+        },
+        "Répartition par fédération": {
+            "France": "17",
+            "Russie": "1"
+        },
+        "Répartition par ligues": {
+            "Franche-Comte": "18"
+        },
+        "Répartition par sexes": {
+            "Masculin": "18"
+        },
+        "Répartition par tranche elo": {
+            "Classement entre 1000 et 1200": "1",
+            "Classement entre 1200 et 1400": "3",
+            "Classement entre 1400 et 1600": "5",
+            "Classement entre 1600 et 1800": "4",
+            "Classement entre 1800 et 2000": "2",
+            "Non Classés": "3"
+        },
+        "Répartition par type de elo": {
+            "Estimé": "3",
+            "Fide": "6",
+            "National": "9"
+        }
+    },
+    "30016": {
+        "Répartition par catégorie d'âge": {
+            "Pupille": "2",
+            "Senior": "8",
+            "Vétéran": "4"
+        },
+        "Répartition par clubs": {
+            "Carré Magique": "1",
+            "Chess 15": "2",
+            "Club 608 d'Echecs Paris": "1",
+            "Genas Echecs": "1",
+            "Issy-Les-Moulineaux": "1",
+            "J.E.E.N.": "1",
+            "Le Club d'Echecs des Basses Vallées Angevines": "1",
+            "Le Touquet - Cote d'Opale": "1",
+            "Lutèce Echecs": "1",
+            "Malakoff et Mat": "1",
+            "Mulhouse Philidor": "1",
+            "RYBEJA": "2"
+        },
+        "Répartition par fédération": {
+            "Bresil": "1",
+            "France": "12",
+            "Viêt Nam": "1"
+        },
+        "Répartition par ligues": {
+            "Alsace": "1",
+            "Ile-de-France": "10",
+            "Lyonnais": "1",
+            "Nord-Pas de Calais": "1",
+            "Pays-de-Loire": "1"
+        },
+        "Répartition par sexes": {
+            "Masculin": "14"
+        },
+        "Répartition par tranche elo": {
+            "Classement entre 1600 et 1800": "3",
+            "Classement entre 1800 et 2000": "7",
+            "Classement entre 2000 et 2200": "4"
+        },
+        "Répartition par type de elo": {
+            "Fide": "14"
+        }
+    },
+    "30017": {
+        "Répartition par catégorie d'âge": {
+            "Poussin": "2",
+            "Senior": "8",
+            "Vétéran": "3"
+        },
+        "Répartition par clubs": {
+            "Chess 15": "4",
+            "Clichy-Echecs-92": "1",
+            "Club 608 d'Echecs Paris": "1",
+            "Club d'Echecs des Ulis": "1",
+            "Inter Chess": "1",
+            "Issy-Les-Moulineaux": "1",
+            "Lutèce Echecs": "1",
+            "RYBEJA": "2",
+            "Tremblay en France": "1"
+        },
+        "Répartition par fédération": {
+            "Algerie": "1",
+            "France": "11",
+            "Italie": "1"
+        },
+        "Répartition par ligues": {
+            "Ile-de-France": "13"
+        },
+        "Répartition par sexes": {
+            "Féminin": "1",
+            "Masculin": "12"
+        },
+        "Répartition par tranche elo": {
+            "Classement entre 1000 et 1200": "1",
+            "Classement entre 1400 et 1600": "3",
+            "Classement entre 1600 et 1800": "7",
+            "Non Classés": "2"
+        },
+        "Répartition par type de elo": {
+            "Estimé": "2",
+            "Fide": "11"
+        }
+    },
+    "30018": {
+        "Répartition par catégorie d'âge": {
+            "Benjamin": "11",
+            "Cadet": "7",
+            "Minime": "4",
+            "Petit-Poussin": "2",
+            "Poussin": "3",
+            "Pupille": "12",
+            "Senior": "14",
+            "Vétéran": "13"
+        },
+        "Répartition par clubs": {
+            "Cercle d'Echecs du Roannais": "6",
+            "Cercle d'echecs et Dames du Brionnais": "11",
+            "Echecs Club du Pays d'Ampluis-Thizy (ECPAT)": "7",
+            "Echiquier Sportif de St Etienne": "2",
+            "Echiquier du Roannais": "33",
+            "Gueugnon Echecs": "5",
+            "Le Champ du Fou": "2"
+        },
+        "Répartition par fédération": {
+            "France": "65",
+            "Suisse": "1"
+        },
+        "Répartition par ligues": {
+            "Bourgogne": "16",
+            "Lyonnais": "50"
+        },
+        "Répartition par sexes": {
+            "Féminin": "8",
+            "Masculin": "58"
+        },
+        "Répartition par tranche elo": {
+            "Classement entre 0 et 1000": "1",
+            "Classement entre 1000 et 1200": "8",
+            "Classement entre 1200 et 1400": "11",
+            "Classement entre 1400 et 1600": "7",
+            "Classement entre 1600 et 1800": "4",
+            "Classement entre 1800 et 2000": "4",
+            "Classement entre 2000 et 2200": "2",
+            "Classement entre 2200 et 2400": "1",
+            "Non Classés": "28"
+        },
+        "Répartition par type de elo": {
+            "Estimé": "28",
+            "Fide": "5",
+            "National": "33"
+        }
+    },
+    "30019": {
+        "Répartition par catégorie d'âge": {
+            "Benjamin": "2",
+            "Junior": "1",
+            "Minime": "2",
+            "Pupille": "2",
+            "Senior": "1",
+            "Vétéran": "1"
+        },
+        "Répartition par clubs": {
+            "Bischwiller": "3",
+            "La Prise en Passant-Mommenheim": "3",
+            "Obernai": "3"
+        },
+        "Répartition par fédération": {
+            "France": "9"
+        },
+        "Répartition par ligues": {
+            "Alsace": "9"
+        },
+        "Répartition par sexes": {
+            "Féminin": "9"
+        },
+        "Répartition par tranche elo": {
+            "Classement entre 1000 et 1200": "3",
+            "Classement entre 1200 et 1400": "2",
+            "Classement entre 1400 et 1600": "3",
+            "Non Classés": "1"
+        },
+        "Répartition par type de elo": {
+            "Estimé": "1",
+            "Fide": "4",
+            "National": "4"
+        }
+    },
+    "30020": {
+        "Répartition par catégorie d'âge": {
+            "Cadet": "1",
+            "Poussin": "4",
+            "Pupille": "2"
+        },
+        "Répartition par clubs": {
+            "Echecs-Club Ajaccien": "7"
+        },
+        "Répartition par fédération": {
+            "France": "7"
+        },
+        "Répartition par ligues": {
+            "Corse": "7"
+        },
+        "Répartition par sexes": {
+            "Féminin": "2",
+            "Masculin": "5"
+        },
+        "Répartition par tranche elo": {
+            "Classement entre 1000 et 1200": "2",
+            "Classement entre 1200 et 1400": "4",
+            "Classement entre 1600 et 1800": "1"
+        },
+        "Répartition par type de elo": {
+            "Fide": "1",
+            "National": "6"
+        }
+    }
+}
