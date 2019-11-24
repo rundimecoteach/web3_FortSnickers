@@ -6,6 +6,7 @@
 * JustText => pip install jusText
 * TermColor => pip install termcolor
 * ProgressBar => pip install progressbar2
+* PathLib2 => pip install pathlib2
 
 ## Récupération d'un jeu de données et génération des fichiers JSON
 Pour utiliser le requêteur (fichier `requeteur.py`), il faut exécuter les scripts de chaque répertoire
