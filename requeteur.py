@@ -1,11 +1,16 @@
 import json
 from operator import itemgetter
+PARTICIPANTS_PATH = "./participants/"
+RESULTATS_PATH = "./resultats/"
+STATISTIQUES_PATH = "./statistiques/"
+TOURNOIS_PATH = "./tournois/"
 
 choices = {
     1: "Tous les tournois auquel un joueur a participé ?",
     2: "Un classement des joueurs par rapport à leur nombre de tournois gagnés ?",
     3: "Un classement des joueurs qui jouent le plus sur une période ?",
-    4: "Les clubs les plus actifs dans les tournois ?"
+    4: "Les clubs les plus actifs dans les tournois ?",
+    5: "Trouver le tournois grace à son ID"
 }
 question = "Que voulez-vous ?\n"
 
@@ -17,7 +22,7 @@ userChoice = int(input(question))
 
 def get_stats_of_player(player_name):
     r = 0
-    with open("./participants/participants.json", "r", encoding="utf-8") as json_file:
+    with open(PARTICIPANTS_PATH + "participants.json", "r", encoding="utf-8") as json_file:
         data = json.load(json_file)
 
         for key in data.keys():
@@ -30,7 +35,7 @@ def get_stats_of_player(player_name):
 
 
 def get_rank_victory_player():
-    with open("./resultats/resultats.json", "r", encoding="utf-8") as json_file:
+    with open(RESULTATS_PATH+"resultats.json", "r", encoding="utf-8") as json_file:
         tournaments = json.load(json_file)
 
         rank = {}
@@ -54,7 +59,7 @@ def get_rank_victory_player():
 
 
 def get_rank_clubs():
-    with open("./statistiques/stats.json", "r", encoding="utf-8") as json_file:
+    with open(STATISTIQUES_PATH+"stats.json", "r", encoding="utf-8") as json_file:
         tournaments = json.load(json_file)
 
         rank = {}
@@ -95,7 +100,11 @@ def define_action(choice):
 
         for key, value in sorted(r.items(), key=itemgetter(1), reverse=True):
             print(value, key)
-
+    elif choice == 5:
+        with open(TOURNOIS_PATH + 'tournois.json') as json_data:
+            tournois = json.load(json_data)
+            mdpe = input("Entrez le numero du tournois : ")
+            print(tournois[mdpe])
 
 define_action(userChoice)
 
