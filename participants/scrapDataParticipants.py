@@ -36,7 +36,7 @@ def createFolder():
         os.mkdir(folderToCreate)
 
         print(colored("Enregistrement des fichiers HTML", "green"))
-        bar = progressbar.ProgressBar(max_value=NB_MAX_DATA)
+        bar = progressbar.ProgressBar(NB_MAX_DATA)
         bar.update(0)
         progress = 1
         for i in range(30000, (30000+NB_MAX_DATA)):
@@ -53,7 +53,7 @@ def nbFilesHTML():
     try:
         elements = os.listdir(ROOT_PATH + "/html")
         return len(elements)
-    except Exception as e:
+    except Exception:
         return 0
 
 def concatArray(a1, a2):
@@ -72,7 +72,7 @@ def runApp():
     TABLE_CONTENT = []
     RESULT_JSON = dict()
 
-    bar = progressbar.ProgressBar(max_value=NB_MAX_DATA)
+    bar = progressbar.ProgressBar(NB_MAX_DATA)
     bar.update(0)
     progress = 1
 
