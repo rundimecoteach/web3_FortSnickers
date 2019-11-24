@@ -89,7 +89,7 @@ def define_action(choice):
 
         for key, value in sorted(r.items(), key=itemgetter(1), reverse=True):
             print(value, key)
-    # Club les plus atifs
+    # Club les plus actifs
     elif choice == 4:
         r = get_rank_clubs()
 
