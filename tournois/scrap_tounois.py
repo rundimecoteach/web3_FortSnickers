@@ -2,6 +2,8 @@ from bs4 import BeautifulSoup
 import justext
 from pathlib2 import Path
 import json
+import os
+from os import path as os_path
 
 def nettoyer_espaces(s):
     s = s.replace('\r', '')
@@ -12,11 +14,14 @@ def nettoyer_espaces(s):
 
 
 # variables
-MAX_ID = 35000
+
+MAX_ID = 30020
 TAB = []
+ROOT_PATH = os_path.abspath(os_path.split(__file__)[0])
+
 # path
-outPath = "./tournois.json"
-inPath = "./tournois/"
+outPath = ROOT_PATH + "/tournois.json"
+inPath = ROOT_PATH
 globalDict = dict()
 # traitement
 for p in  Path(inPath).iterdir():
