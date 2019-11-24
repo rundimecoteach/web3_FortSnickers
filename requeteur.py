@@ -94,6 +94,8 @@ def define_action(choice):
 
         for key, value in sorted(r.items(), key=itemgetter(1), reverse=True):
             print(value, key)
+    elif choice == 3:
+        print("choix non implémenté")
     # Club les plus actifs
     elif choice == 4:
         r = get_rank_clubs()

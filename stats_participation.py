@@ -1,5 +1,6 @@
 import json
 import re
+from _datetime import datetime
 
 question = "Que voulez-vous vous ?\n 1 - Stats par année civile ?\n 2 - Stats par année sportive ?\n"
 
@@ -83,9 +84,38 @@ def get_stats_per_year():
     return stats
 
 
+def get_stats_per_season():
+    stats = {}
+
+    # on récupère les tournois, participants
+    tournois = get_tournois()
+    # on récupère le nombre de joueur
+    tournoi_participants = get_participants()
+    # on récupère les résultats
+    resultats = get_resultats()
+
+    # on récupère les dates des tournois
+    for num_tournoi in tournois.keys():
+        tournoi = tournois[num_tournoi]
+
+        if tournoi is not None:
+            # on récupère les dates du tournoi
+            dates = tournoi.get("Dates :")
+
+            if dates and dates is not None:
+                # on récupère les participants de ce tournoi
+                participants = tournoi_participants.get(num_tournoi)
+                resultats_participants = resultats.get(num_tournoi)
+
+                # on prend le dernier mot de la date pour connaitre l'année
+                date = dates.split(" - ")[0].strip()
+                date_obj = datetime.strptime(date, "%A %d %B %Y")
+
+    return stats
+
+
 if userChoice == 1:
     # stats par année civile
-    print("année civile")
     r = get_stats_per_year()
 
     for key, value in r.items():
@@ -94,4 +124,4 @@ if userChoice == 1:
 
 elif userChoice == 2:
     # stats par année sportive
-    print("année sportive")
+    print("choix non implémenté")
